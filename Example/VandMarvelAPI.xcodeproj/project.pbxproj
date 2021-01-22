@@ -13,6 +13,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		A03128BB25BA4AF70080CAAA /* VMAuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03128BA25BA4AF70080CAAA /* VMAuthTests.swift */; };
+		A03128BF25BA4CE90080CAAA /* VMAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03128BE25BA4CE90080CAAA /* VMAPITests.swift */; };
 		A0BDAAE125B7C49600A711AB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDAAE025B7C49600A711AB /* MainView.swift */; };
 		E85120F3DDF68C70F908FE59 /* Pods_VandMarvelAPI_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3A30A2BAECCE777675B170 /* Pods_VandMarvelAPI_Example.framework */; };
 /* End PBXBuildFile section */
@@ -43,6 +45,8 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6D3A30A2BAECCE777675B170 /* Pods_VandMarvelAPI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VandMarvelAPI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7643217B4F090D88E46D0D5E /* Pods-VandMarvelAPI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VandMarvelAPI_Example.debug.xcconfig"; path = "Target Support Files/Pods-VandMarvelAPI_Example/Pods-VandMarvelAPI_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A03128BA25BA4AF70080CAAA /* VMAuthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMAuthTests.swift; sourceTree = "<group>"; };
+		A03128BE25BA4CE90080CAAA /* VMAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMAPITests.swift; sourceTree = "<group>"; };
 		A0BDAAE025B7C49600A711AB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B53597F51111864EBB8F7250 /* Pods-VandMarvelAPI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VandMarvelAPI_Tests.debug.xcconfig"; path = "Target Support Files/Pods-VandMarvelAPI_Tests/Pods-VandMarvelAPI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D8511A55EE11C92737D45D26 /* Pods_VandMarvelAPI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VandMarvelAPI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +109,8 @@
 			children = (
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				A03128BA25BA4AF70080CAAA /* VMAuthTests.swift */,
+				A03128BE25BA4CE90080CAAA /* VMAPITests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -318,11 +324,13 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-VandMarvelAPI_Example/Pods-VandMarvelAPI_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftHash/SwiftHash.framework",
 				"${BUILT_PRODUCTS_DIR}/VandMarvelAPI/VandMarvelAPI.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHash.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VandMarvelAPI.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,6 +377,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A03128BB25BA4AF70080CAAA /* VMAuthTests.swift in Sources */,
+				A03128BF25BA4CE90080CAAA /* VMAPITests.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
