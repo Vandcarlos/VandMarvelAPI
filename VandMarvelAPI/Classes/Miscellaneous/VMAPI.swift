@@ -57,7 +57,10 @@ fileprivate extension VMRequest {
 
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = httpMethod.rawValue
-        urlRequest.httpBody = try? JSONSerialization.data(withJSONObject: body)
+
+        if case .post(let body) = httpMethod {
+            urlRequest.httpBody = try? JSONSerialization.data(withJSONObject: body)
+        }
 
         header.forEach { urlRequest.addValue($0.value, forHTTPHeaderField: $0.key) }
 

@@ -1,8 +1,15 @@
 // Created on 21/01/21. 
 
-public enum VMHttpMethod: String {
+public enum VMHttpMethod {
 
-    case get = "GET"
-    case post = "POST"
+    case get
+    case post(body: [String: Any?])
+
+    var rawValue: String {
+        switch self {
+        case .get: return "GET"
+        case .post: return "POST"
+        }
+    }
 
 }
